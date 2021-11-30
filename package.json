@@ -1,0 +1,22 @@
+{
+  "name": "pr-unlabeler",
+  "description": "Remove a label from the current PR or issue",
+  "private": false,
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/fastruby/pr-unlabeler"
+  },
+  "scripts": {
+    "prepare": "ncc build src/index.ts -o dist --source-map --license licenses.txt"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@types/node": "^16.11.11"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1",
+    "typescript": "^4.5.2"
+  }
+}

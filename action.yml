@@ -1,0 +1,10 @@
+name: "PR Unlabeler"
+description: "Remove a label in the current PR"
+inputs:
+  label-to-remove:
+    description: "Any label from the possible labels"
+    required: true
+    default: ""
+runs:
+  using: "node12"
+  main: "dist/index.js"
